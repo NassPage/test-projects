@@ -9,7 +9,9 @@ import androidx.fragment.app.FragmentTransaction;
 import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -70,6 +72,32 @@ public class MainActivity extends AppCompatActivity {
                 FragmentTransaction replaceTransaction = fragmentManager.beginTransaction();
                 replaceTransaction.remove(sampleFragment2);
                 replaceTransaction.commit();
+            }
+        });
+
+        Button btnShowDialog = findViewById(R.id.showDialog);
+        btnShowDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("سلام")
+                        .setMessage("خوش آمدید")
+                        .setPositiveButton("تائید", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(MainActivity.this, "تائید کلیک شد",
+                                        Toast.LENGTH_SHORT).show();
+                            }
+                        }).setNegativeButton("انصراف", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(MainActivity.this, "انصراف کلیک شد",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }).setCancelable(false);
+
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
             }
         });
     }

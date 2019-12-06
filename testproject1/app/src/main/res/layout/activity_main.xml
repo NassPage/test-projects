@@ -33,4 +33,13 @@
         android:text="remove fragment"
         android:layout_centerHorizontal="true"
         />
+    <Button
+        android:layout_below="@id/replace_fragment"
+        android:id="@+id/showDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:text="show dialog"
+        android:layout_centerHorizontal="true"
+        />
 </RelativeLayout>
