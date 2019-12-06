@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/standard_margin">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_image"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:layout_marginBottom="@dimen/standard_margin"
+    tools:src="@tools:sample/backgrounds/scenic"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:id="@+id/item_title"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/large_font_size"
+        android:layout_gravity="right"
+        tools:text="عنوان"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:id="@+id/item_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/normal_font_size"
+        android:layout_gravity="right"
+        tools:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:id="@+id/item_date"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/normal_font_size"
+        android:layout_gravity="left"
+        tools:text="2 ساعت پیش"/>
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_font_size">14sp</dimen>
+    <dimen name="small_font_size">12sp</dimen>
+    <dimen name="large_font_size">16sp</dimen>
+
+    <dimen name="action_button_size">32dp</dimen>
+
+    <dimen name="standard_marginX2">16dp</dimen>
+    <dimen name="standard_margin">8dp</dimen>
+    <dimen name="avatar_size">62dp</dimen>
+    <dimen name="form_fields_margin">40dp</dimen>
+
+
+</resources>
