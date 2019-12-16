@@ -8,6 +8,8 @@
 
     <dimen name="standard_marginX2">16dp</dimen>
     <dimen name="standard_margin">8dp</dimen>
+    <dimen name="standard_marginD2">4dp</dimen>
+
     <dimen name="avatar_size">62dp</dimen>
     <dimen name="form_fields_margin">40dp</dimen>
 

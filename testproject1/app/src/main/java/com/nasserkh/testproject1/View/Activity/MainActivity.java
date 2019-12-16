@@ -1,4 +1,4 @@
-package com.nasserkh.testproject1;
+package com.nasserkh.testproject1.View.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -20,6 +20,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.nasserkh.testproject1.R;
+import com.nasserkh.testproject1.View.Fragment.SampleFragment;
+import com.nasserkh.testproject1.View.Fragment.SampleFragment2;
 
 import java.util.ArrayList;
 

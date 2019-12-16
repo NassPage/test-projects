@@ -1,4 +1,4 @@
-package com.nasserkh.testproject1;
+package com.nasserkh.testproject1.DataModel;
 
 import android.graphics.drawable.Drawable;
 

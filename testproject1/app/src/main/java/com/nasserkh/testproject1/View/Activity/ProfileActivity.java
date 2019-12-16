@@ -1,4 +1,4 @@
-package com.nasserkh.testproject1;
+package com.nasserkh.testproject1.View.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+import com.nasserkh.testproject1.R;
 
 public class ProfileActivity extends AppCompatActivity {
 

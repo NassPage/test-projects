@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/standard_margin">
+
+    <ImageView
+        android:id="@+id/clothingImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/clothingImage"
+        android:padding="@dimen/standard_marginX2">
+        <TextView
+            android:id="@+id/clothing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textColor="@color/White"
+            android:textSize="@dimen/large_font_size"
+            tools:text="عنوان لباس" />
+
+        <TextView
+            android:id="@+id/clothing_viewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clothing_title"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textColor="@color/White"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/large_font_size"
+            tools:text="700" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/clothing_viewCount"
+            android:layout_alignBottom="@id/clothing_viewCount"
+            android:layout_toLeftOf="@id/clothing_viewCount"
+            android:layout_marginRight="@dimen/standard_marginD2"
+            android:src="@drawable/ic_remove_red_eye_white_24dp"></ImageView>
+    </RelativeLayout>
+</RelativeLayout>

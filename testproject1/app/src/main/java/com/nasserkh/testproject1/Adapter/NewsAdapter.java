@@ -1,4 +1,4 @@
-package com.nasserkh.testproject1;
+package com.nasserkh.testproject1.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
+import com.nasserkh.testproject1.DataModel.PostDM;
+import com.nasserkh.testproject1.R;
 
 import java.util.List;
 

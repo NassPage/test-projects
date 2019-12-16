@@ -1,12 +1,14 @@
-package com.nasserkh.testproject1;
+package com.nasserkh.testproject1.View.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
+
+import com.nasserkh.testproject1.FakeDataGenerator;
+import com.nasserkh.testproject1.Adapter.NewsAdapter;
+import com.nasserkh.testproject1.R;
 
 public class LastNewsActivity extends AppCompatActivity {
 
