@@ -4,10 +4,12 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.google.android.material.navigation.NavigationView;
@@ -35,7 +37,7 @@ public class LastNewsActivity extends AppCompatActivity {
     private void setupToolbar(){
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar); //نمایش نام صفحه از مانیفست
-
+        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.White ));
         DrawerLayout drawerLayout = findViewById(R.id.navigationDrawer);
 //        NavigationView navigationView = findViewById(R.id.navigationView);
 
