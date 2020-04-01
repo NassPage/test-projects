@@ -45,6 +45,6 @@
             android:layout_alignBottom="@id/clothing_viewCount"
             android:layout_toLeftOf="@id/clothing_viewCount"
             android:layout_marginRight="@dimen/standard_marginD2"
-            android:src="@drawable/ic_remove_red_eye_white_24dp"></ImageView>
+            android:src="@drawable/ic_remove_red_eye_black_24dp"></ImageView>
     </RelativeLayout>
 </RelativeLayout>

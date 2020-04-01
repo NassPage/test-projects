@@ -11,14 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Activity.botickActivity">
+        <activity android:name=".View.Activity.botickActivity"/>
+        <activity android:name=".View.Activity.LastNewsActivity"
+            android:label="@string/appName">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.Activity.LastNewsActivity"></activity>
         <activity android:name=".View.Activity.ProfileActivity"></activity>
         <activity android:name=".View.Activity.MainActivity">
 

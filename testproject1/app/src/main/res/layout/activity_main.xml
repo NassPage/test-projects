@@ -1,45 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.Activity.MainActivity">
 
-<!--<fragment-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:id="@+id/sampleFragment"-->
-<!--    android:name="com.nasserkh.testproject1.View.Fragment.SampleFragment"-->
-<!--    />-->
-<FrameLayout
-    android:id="@+id/fragment_container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
-    <Button
-        android:id="@+id/replace_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/Black"
-        android:text="replace fragment"
-        android:layout_centerHorizontal="true"
-        />
-    <Button
-        android:layout_below="@id/replace_fragment"
-        android:id="@+id/remove_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/Black"
-        android:text="remove fragment"
-        android:layout_centerHorizontal="true"
-        />
-    <Button
-        android:layout_below="@id/replace_fragment"
-        android:id="@+id/showDialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/Black"
-        android:text="show dialog"
-        android:layout_centerHorizontal="true"
-        />
-</RelativeLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<fragment-->
+        <!--    android:layout_width="match_parent"-->
+        <!--    android:layout_height="match_parent"-->
+        <!--    android:id="@+id/sampleFragment"-->
+        <!--    android:name="com.nasserkh.testproject1.View.Fragment.SampleFragment"-->
+        <!--    />-->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/replace_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="replace fragment"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/remove_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/replace_fragment"
+            android:layout_centerHorizontal="true"
+            android:text="remove fragment"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/showDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/replace_fragment"
+            android:layout_centerHorizontal="true"
+            android:text="show dialog"
+            android:textColor="@color/Black" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
